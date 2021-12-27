@@ -1,0 +1,4 @@
+3 Approach to styling component
+-- 1. Use seperate CSS (FileName.css) and import to component with import 'FileName.css'
+-- 2. Use styled component (have to install it with npm install)
+-- 3. Use CSS modules (FileName.module.css) and import to component with import whateverName from 'FileName.module.css'
