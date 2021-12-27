@@ -2,3 +2,12 @@
 -- 1. Use seperate CSS (FileName.css) and import to component with import 'FileName.css'
 -- 2. Use styled component (have to install it with npm install)
 -- 3. Use CSS modules (FileName.module.css) and import to component with import whateverName from 'FileName.module.css'
+
+*How to use CSS Module on JSX tag
+import name from './File.module.css'
+
+basic usage:
+example : <div className={name.class}></div> or (for class name with dash) <div className={name['class']}>
+
+conditional usage:
+example : <div className={`${name.class} ${!condition && name.class}`} or <div className={`${name.class} ${!condition ? 'statement' : 'statement'}`}
